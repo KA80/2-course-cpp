@@ -23,7 +23,6 @@ public:
                     counter++;
                 }
                 if (counter) {
-//                    cout << counter << " ";
                     break;
                 }
             }
