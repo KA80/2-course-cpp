@@ -3,4 +3,4 @@ project(2_course_cpp)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(2_course_cpp "first_contest/Finite Fields(easy)/main.cpp" "first_contest/Finite Fields(easy)/num.cpp" "first_contest/Finite Fields(easy)/num.h")
+add_executable(2_course_cpp first_contest/Date/main.cpp first_contest/Date/date.h)
