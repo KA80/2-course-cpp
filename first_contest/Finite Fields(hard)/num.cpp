@@ -103,10 +103,9 @@ inline Num& Num::operator*=(int num) {
         for (int i = 0; i < a; i++) {
            value = (value + this->value) % modulo;
         }
+
         this->value = value;
     }
-
-
     return *this;
 }
 
