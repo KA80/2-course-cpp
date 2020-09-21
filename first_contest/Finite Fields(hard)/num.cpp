@@ -84,12 +84,29 @@ inline Num& Num::operator-=(int num) {
 
 
 inline Num& Num::operator*=(int num) {
+
     int a = num % modulo;
-    unsigned int value = 0;                      //TODO
-    for (int i = 0; i < a; i++) {                //Слишком долго
-        value = (value + this->value) % modulo;  //надо переделать
+    int dif = modulo - value;
+
+    if (a > 100000) {
+
+        long long int answ = value - (dif * (a - 1));
+        answ %= modulo;
+        if (answ < 0)
+            answ = modulo + answ;
+
+        value = answ;
+
+    }else {
+        int a = num % modulo;
+        unsigned int value = 0;
+        for (int i = 0; i < a; i++) {
+           value = (value + this->value) % modulo;
+        }
+        this->value = value;
     }
-    this->value = value;
+
 
     return *this;
 }
+
