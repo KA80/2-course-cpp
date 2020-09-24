@@ -6,10 +6,12 @@
 class Set {
     std::vector<int64_t> vec;
 
-public:
+ public:
     Set() = default;
     explicit Set(const std::vector<int64_t>& vec) {
-        this->vec = vec;
+        for (auto i : vec) {
+            Add(i);
+        }
     }
 
     Set Union(const Set& Other) const {
@@ -23,7 +25,7 @@ public:
 
     Set Intersection(const Set& Other) const {
         Set new_set(vec);
-        for (auto i : this->vec){
+        for (auto i : this->vec) {
             if (!Other.Contains(i))
                 new_set.Remove(i);
         }
@@ -46,7 +48,7 @@ public:
     }
 
     void Add(int64_t value) {
-        if (!Contains(value)){
+        if (!Contains(value)) {
             vec.push_back(value);
             std::sort(vec.begin(), vec.end());
         }
@@ -54,7 +56,8 @@ public:
 
     void Remove(int64_t value) {
         if (Contains(value)) {
-            vec.erase(std::find(vec.begin(), vec.end(), value));
+            vec.erase(std::find(
+                    vec.begin(), vec.end(), value));
         }
     }
 

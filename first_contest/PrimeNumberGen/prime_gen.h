@@ -2,11 +2,10 @@
 #include <vector>
 #include <cmath>
 
-using namespace std;
-
 class PrimeNumberGenerator {
     int cur_num;
-public:
+
+ public:
     explicit PrimeNumberGenerator(int start) {
         this->cur_num = start;
     }
@@ -14,7 +13,7 @@ public:
     int GetNextPrime() {
         int next_prime_num;
         bool is_prime = false;
-        vector<int> prime_nums;
+        std::vector<int> prime_nums;
 
         while (!is_prime) {
             int counter = 0;
@@ -26,7 +25,7 @@ public:
                     break;
                 }
             }
-            if (!counter and cur_num > 1) {
+            if (!counter && cur_num > 1) {
                 is_prime = true;
             } else {
                 cur_num++;

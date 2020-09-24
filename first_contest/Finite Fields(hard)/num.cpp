@@ -108,4 +108,3 @@ inline Num& Num::operator*=(int num) {
     }
     return *this;
 }
-
