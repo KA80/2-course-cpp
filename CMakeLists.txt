@@ -3,4 +3,14 @@ project(2_course_cpp)
 
 set(CMAKE_CXX_STANDARD 14)
 
+# add coverage
+#if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
+#    add_compile_options(-fprofile-instr-generate -fcoverage-mapping)
+#    add_link_options(-fprofile-instr-generate)
+#    link_libraries(clang_rt.profile-x86_64)
+#elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
+#    add_compile_options(--coverage)
+#    link_libraries(gcov)
+#endif ()
+
 add_executable(2_course_cpp "first_contest/BufferedReader/main.cpp" "first_contest/BufferedReader/buffered_reader.h")
