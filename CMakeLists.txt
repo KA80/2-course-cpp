@@ -13,4 +13,4 @@ set(CMAKE_CXX_STANDARD 14)
 #    link_libraries(gcov)
 #endif ()
 
-add_executable(2_course_cpp "first_contest/BufferedReader/main.cpp" "first_contest/BufferedReader/buffered_reader.h")
+add_executable(2_course_cpp "1 contest/BufferedReader/main.cpp" "1 contest/BufferedReader/buffered_reader.h")
