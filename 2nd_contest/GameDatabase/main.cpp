@@ -9,10 +9,10 @@ using ObjectId = unsigned long long int;
 
 struct GameObject
 {
-    ObjectId id;
-    string name;
-    size_t x;
-    size_t y;
+  ObjectId id;
+  std::string name;
+  size_t x;
+  size_t y;
 };
 
 #include "game_database.h"

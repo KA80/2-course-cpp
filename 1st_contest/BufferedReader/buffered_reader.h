@@ -7,15 +7,14 @@ class PackageStream;
 class BufferedReader {
   PackageStream *stream;
   int32_t pos_ = 0;
-  std::shared_ptr<char[]> buf;
+  std::unique_ptr<char[]> buf;
   int32_t remaining_package_len = 0;
   int32_t package_len = 0;
 
  public:
   explicit BufferedReader(PackageStream *stream) {
     this->stream = stream;
-    std::shared_ptr<char[]> a(new char[stream->PackageLen()]);
-    buf = a;
+    buf = std::unique_ptr<char[]>(new char[stream->PackageLen()]);
   }
 
   int32_t Read(char *output_buffer, int32_t buffer_len) {
@@ -30,13 +29,12 @@ class BufferedReader {
         remaining_package_len = package_len;
       }
 
-      int32_t len = min(remaining_package_len, remaining_len);
+      int32_t len = std::min(remaining_package_len, remaining_len);
       remaining_package_len -= remaining_len;
       memcpy(output_buffer + pos, buf.get() + pos_, len);
       real_buf_len += len;
       if (remaining_package_len <= 0) {
-        std::shared_ptr<char[]> a(new char[stream->PackageLen()]);
-        buf = a;
+        buf.reset(new char[stream->PackageLen()]);
         pos_ = 0;
       } else {
         pos_ = package_len - remaining_package_len;

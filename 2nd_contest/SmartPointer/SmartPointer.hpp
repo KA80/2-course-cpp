@@ -21,24 +21,39 @@ class SmartPointer {
  public:
   using value_type = T;
 
-  SmartPointer(value_type * = nullptr);
+  SmartPointer(value_type * = nullptr) {
+
+  }
 
   // copy constructor
-  SmartPointer(const SmartPointer &);
+  SmartPointer(const SmartPointer &) {
+
+  }
 
   // move constructor
-  SmartPointer(SmartPointer &&);
+  SmartPointer(SmartPointer &&) {
+
+  }
 
   // copy assigment
-  SmartPointer &operator=(const SmartPointer &);
+  SmartPointer &operator=(const SmartPointer &) {
+
+  }
 
   // move assigment
-  SmartPointer &operator=(SmartPointer &&);
+  SmartPointer &operator=(SmartPointer &&) {
+
+  }
+
 
   //
-  SmartPointer &operator=(value_type *);
+  SmartPointer &operator=(value_type *) {
 
-  ~SmartPointer();
+  }
+
+  ~SmartPointer() {
+
+  }
 
   // return reference to the object of class/type T
   // if SmartPointer contains nullptr throw `SmartPointer::exception`
@@ -66,7 +81,12 @@ class SmartPointer {
   std::size_t count_owners() const;
 
  private:
-  class Core;
+  class Core {
+    int64_t count;
+
+
+   public:
+  };
   Core *core;
 };
 }
