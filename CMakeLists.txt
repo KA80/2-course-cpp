@@ -13,4 +13,4 @@ set(CMAKE_CXX_STANDARD 14)
 #    link_libraries(gcov)
 #endif ()
 
-add_executable(2_course_cpp 2nd_contest/CodeFormatVisitor/format_visitor.h 2nd_contest/CodeFormatVisitor/main.cpp)
+add_executable(2_course_cpp 2nd_contest/CodeFormatVisitor/main.cpp)
