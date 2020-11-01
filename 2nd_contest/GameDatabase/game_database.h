@@ -1,6 +1,8 @@
 #include <iostream>
 #include <utility>
+#include <string>
 #include <vector>
+#include <functional>
 #include <memory>
 #include <map>
 #include <set>
@@ -11,7 +13,6 @@ bool operator>(const GameObject &a, const GameObject &b) {
 }
 
 class GameDatabase {
-
   template<class Tp, template<class> class Compare>
   class DereferenceCompare {
     Compare<Tp> comp;
@@ -106,4 +107,3 @@ class GameDatabase {
     return got_objects;
   }
 };
-

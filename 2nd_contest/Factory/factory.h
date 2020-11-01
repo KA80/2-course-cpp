@@ -1,5 +1,6 @@
 #include <map>
 #include <memory>
+#include <string>
 
 class Object {
  public:
@@ -11,7 +12,7 @@ class Child : public Object {
   std::string class_id_;
 
  public:
-  Child(const std::string &class_id) {
+  explicit Child(const std::string &class_id) {
     class_id_ = class_id;
   }
 
