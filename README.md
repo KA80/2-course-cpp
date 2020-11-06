@@ -4,4 +4,4 @@
 
  * [First Contest (done)](https://imcs.dvfu.ru/cats/?f=problems;cid=4917802;sid=i1y9WyLQEgO53sZTyL84N2k21VaPKq)
  
- * [Second Contest](https://imcs.dvfu.ru/cats/?f=problems;cid=5011656;sid=QxDFn3h8BLe7YW0KsM2LgbPYV7vtaS) 
+ * [Second Contest (done)](https://imcs.dvfu.ru/cats/?f=problems;cid=5011656;sid=QxDFn3h8BLe7YW0KsM2LgbPYV7vtaS) 

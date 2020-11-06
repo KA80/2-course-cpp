@@ -1,8 +1,11 @@
-cmake_minimum_required(VERSION 3.17)
+cmake_minimum_required(VERSION 3.16)
 project(2_course_cpp)
 
 set(CMAKE_CXX_STANDARD 14)
 
+if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
+    add_link_options(-fsanitize=address -g -Wall -Werror)
+endif ()
 # add coverage
 #if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
 #    add_compile_options(-fprofile-instr-generate -fcoverage-mapping)
@@ -13,4 +16,4 @@ set(CMAKE_CXX_STANDARD 14)
 #    link_libraries(gcov)
 #endif ()
 
-add_executable(2_course_cpp 2nd_contest/CodeFormatVisitor/main.cpp)
+add_executable(2_course_cpp 2nd_contest/SmartPointer/main.cpp)
