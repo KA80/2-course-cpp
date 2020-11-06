@@ -77,6 +77,6 @@ fabric.properties
 /cmake-build-debug
 /cmake-build-wsl
 /cmake-build-mingw
-/cmake-build-mingw_coverage
+/cmake-build-wsl-coverage
 /cmake-build-wsl_clang
 /cmake-build-wsl_gcc
