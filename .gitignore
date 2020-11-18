@@ -78,5 +78,5 @@ fabric.properties
 /cmake-build-wsl
 /cmake-build-mingw
 /cmake-build-wsl-coverage
-/cmake-build-wsl_clang
-/cmake-build-wsl_gcc
+/cmake-build-wsl-clang
+/cmake-build-wsl-gcc
