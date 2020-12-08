@@ -16,4 +16,4 @@ endif ()
 #    link_libraries(gcov)
 #endif ()
 
-add_executable(2_course_cpp)
+add_executable(2_course_cpp 3rd_contest/InitializeVector/main.cpp)
