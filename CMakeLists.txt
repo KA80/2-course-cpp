@@ -16,4 +16,4 @@ endif ()
 #    link_libraries(gcov)
 #endif ()
 
-add_executable(2_course_cpp 3rd_contest/GraphVisitor/main.cpp)
+add_executable(2_course_cpp 3rd_contest/IsConvertable/main.cpp)
