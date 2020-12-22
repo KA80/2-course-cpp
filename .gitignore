@@ -80,3 +80,5 @@ fabric.properties
 /cmake-build-wsl-coverage
 /cmake-build-wsl-clang
 /cmake-build-wsl-gcc
+
+/.idea/.name

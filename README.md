@@ -6,4 +6,7 @@
  
  * [Second Contest (done)](https://imcs.dvfu.ru/cats/?f=problems;cid=5011656;sid=QxDFn3h8BLe7YW0KsM2LgbPYV7vtaS) 
 
- * [Third Contest](https://imcs.dvfu.ru/cats/?f=problems;cid=5076804;sid=78IHPTnDgocY7mdl3ZJsEJZZBxJrI6)
+ * [Third Contest (done)](https://imcs.dvfu.ru/cats/?f=problems;cid=5076804;sid=78IHPTnDgocY7mdl3ZJsEJZZBxJrI6)
+ 
+ * [Fourth Contest](https://imcs.dvfu.ru/cats/?f=problems;cid=5136926;sid=ROEalHpBZctYB0e43DMnJLF0UlRWcc)
+ 
