@@ -16,4 +16,4 @@ endif ()
 #    link_libraries(gcov)
 #endif ()
 
-add_executable(2_course_cpp 4th_contest/CaesarEncrypt/main.cpp)
+add_executable(2_course_cpp 4th_contest/ParallelMatrixMultiplication/main.cpp)

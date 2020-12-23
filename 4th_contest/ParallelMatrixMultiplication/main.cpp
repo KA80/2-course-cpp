@@ -125,10 +125,10 @@ int main(int argc, char** argv) {
   std::tie(trivial_ms, ans) = BenchmarkFunc(SimpleMul, a, b);
 
 
-  const int32_t best_thread_count = 0; // ThreadSanitizer??? // std::thread::hardware_concurrency();
+  const int32_t best_thread_count = std::thread::hardware_concurrency(); // ThreadSanitizer??? // std::thread::hardware_concurrency();
 
   int32_t last_time = 1e9;
-  for (int tcount = 1; tcount <= 5; tcount++) {
+  for (int tcount = 1; tcount <= 10; tcount++) {
     int32_t mul_ms;
     DenseMat mat_res;
     std::tie(mul_ms, mat_res) = BenchmarkFunc(MatMulParal, a, b, tcount);
