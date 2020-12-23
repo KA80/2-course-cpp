@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 project(2_course_cpp)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
 if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
     add_link_options(-fsanitize=address -g -Wall -Werror)
@@ -16,4 +16,4 @@ endif ()
 #    link_libraries(gcov)
 #endif ()
 
-add_executable(2_course_cpp 4th_contest/ParallelMatrixMultiplication/main.cpp)
+add_executable(2_course_cpp 4th_contest/Queue/main.cpp)
